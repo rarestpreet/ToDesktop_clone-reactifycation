@@ -1,16 +1,66 @@
-# React + Vite
+# ToDesktop Clone — Reactifycation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React version of my repo **ToDesktop_clone**.
 
-Currently, two official plugins are available:
+Live demo: https://todesktop-preet.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
 
-## React Compiler
+- **React + Vite**
+- **Tailwind CSS** (via `@tailwindcss/vite`)
+- **React Router** (wrapped with `BrowserRouter`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What’s Inside (UI Sections)
 
-## Expanding the ESLint configuration
+The app is composed of these main layout sections (rendered in `src/App.jsx`):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- NavBar
+- Hero
+- Guide
+- Feature
+- Review
+- Pricing
+- Queries (FAQ)
+- Footer
+
+The app also uses an `AppContextProvider` (`src/context/AppContextProvider`) to share state across components.
+
+## Getting Started (Local Setup)
+
+### 1) Install dependencies
+
+```bash
+npm install
+```
+
+### 2) Start the dev server
+
+```bash
+npm run dev
+```
+
+## Scripts
+
+- `npm run dev` — run Vite dev server
+- `npm run build` — create a production build
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint
+
+## Project Structure
+
+```txt
+.
+├─ public/
+├─ src/
+│  ├─ components/
+│  │  └─ layout/        # NavBar, Hero, Guide, Feature, Review, Pricing, Queries, Footer
+│  ├─ context/          # AppContextProvider, app-wide state
+│  ├─ elements/         # smaller reusable UI pieces
+│  ├─ util/             # helper utilities
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ index.html
+├─ vite.config.js
+└─ package.json
+```
