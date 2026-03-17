@@ -9,7 +9,9 @@ function DesktopNav() {
             <div className="items-center gap-7 flex font-medium text-lg">
                 <NavLinks linkClass="hover:text-blue-600" />
             </div>
-            <NavCTA className="border rounded-md border-solid border-gray-500 hover:border-black py-2 px-3 font-medium text-base" />
+            <NavCTA className="border rounded-md border-solid border-gray-500 
+            py-2 px-3 font-medium text-base
+            hover:border-black hover:scale-105 duration-300 transition group cursor-pointer" />
         </div>
     )
 }

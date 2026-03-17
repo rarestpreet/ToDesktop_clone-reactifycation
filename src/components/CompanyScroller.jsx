@@ -3,12 +3,21 @@ import LogoCard from "../elements/LogoCard"
 import useAppContext from "../context/appContext"
 import { row1 } from "../util/constant"
 
-function ScrollRow({ logos, translateClass }) {
+function ScrollRow({ logos, direction }) {
+    const animationClass = direction === 'reverse' ? 'animate-scroll-reverse' : 'animate-scroll';
+
     return (
-        <div className={`flex gap-5 w-max ${translateClass}`}>
-            {logos.map((logo, i) => (
-                <LogoCard key={`${logo.name}-${i}`} src={logo.src} name={logo.name} />
-            ))}
+        <div className={`flex w-max ${animationClass}`}>
+            <div className="flex gap-5 pr-5 w-max">
+                {logos.map((logo, i) => (
+                    <LogoCard key={`${logo.name}-${i}-1`} src={logo.src} name={logo.name} />
+                ))}
+            </div>
+            <div className="flex gap-5 pr-5 w-max">
+                {logos.map((logo, i) => (
+                    <LogoCard key={`${logo.name}-${i}-2`} src={logo.src} name={logo.name} />
+                ))}
+            </div>
         </div>
     )
 }
@@ -24,10 +33,10 @@ function CompanyScroller() {
                 <img className="translate-y-0.5 -scale-x-100" src={assets.asset2} alt="" />
             </div>
             <div className="text-sm flex flex-col gap-7 sm:text-base overflow-hidden">
-                <ScrollRow logos={row1} translateClass="-translate-x-10" />
-                <ScrollRow logos={row1} translateClass="-translate-x-20" />
+                <ScrollRow logos={row1} direction="reverse" />
+                <ScrollRow logos={row1} direction="normal" />
                 {isMobile &&
-                    <ScrollRow logos={row1} translateClass="-translate-x-10" />
+                    <ScrollRow logos={row1} direction="reverse" />
                 }
             </div>
         </div>

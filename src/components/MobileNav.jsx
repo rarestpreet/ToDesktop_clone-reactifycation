@@ -27,10 +27,10 @@ function MobileNav() {
             {isMenuOpen &&
                 <div id="hidden-nav" className="fixed inset-x-0 top-[56px] bottom-0 z-10 flex flex-col py-2 px-3 gap-4 bg-white overflow-y-auto">
                     <div id="hidden-nav-menu" className="flex flex-col items-start gap-2 font-medium">
-                        <NavLinks linkClass="p-3 w-full border border-none rounded-md hover:bg-gray-50" />
+                        <NavLinks linkClass="p-3 w-full border border-none rounded-md hover:bg-gray-50 duration-300" />
                     </div>
                     <div className="w-full h-px rounded-md bg-gray-400"></div>
-                    <NavCTA className="p-3 w-full border border-none rounded-md hover:bg-gray-50 text-lg" />
+                    <NavCTA className="p-3 w-full border border-none rounded-md hover:bg-gray-50 text-lg transition group" />
                 </div>
             }
         </div>

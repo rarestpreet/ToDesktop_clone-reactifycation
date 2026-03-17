@@ -3,9 +3,9 @@ import assets from "../util/assets"
 
 function Feature() {
     return (
-        <div className="px-10 flex flex-col gap-10 items-start">
+        <div className="flex flex-col gap-10 items-start">
             <h1 className="font-semibold text-5xl sm:leading-17 sm:text-6xl">ToDesktop handles the details</h1>
-            <div className="lg:grid grid-cols-3 auto-rows-[96px] gap-5">
+            <div className="flex flex-col gap-3 lg:grid grid-cols-3 auto-rows-[96px]">
                 <FeatureCard
                     title={"Native Notification"}
                     description={""}
