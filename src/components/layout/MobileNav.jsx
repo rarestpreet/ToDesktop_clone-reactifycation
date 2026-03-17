@@ -1,6 +1,6 @@
-import BrandContainer from "../elements/BrandContainer"
-import NavLinks from "../elements/NavLinks"
-import NavCTA from "../elements/NavCTA"
+import BrandContainer from "../ui/BrandContainer"
+import NavLinks from "../ui/NavLinks"
+import NavCTA from "../ui/NavCTA"
 import { useState } from "react"
 
 function MobileNav() {

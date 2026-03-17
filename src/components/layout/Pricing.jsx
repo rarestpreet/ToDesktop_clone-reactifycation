@@ -1,4 +1,4 @@
-import PriceCard from "../elements/PriceCard"
+import PriceCard from "../ui/PriceCard"
 
 function Pricing() {
     return (

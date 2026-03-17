@@ -1,7 +1,7 @@
-import assets from "../util/assets"
-import LogoCard from "../elements/LogoCard"
-import useAppContext from "../context/appContext"
-import { row1 } from "../util/constant"
+import assets from "../../assets/index.js"
+import LogoCard from "../ui/LogoCard"
+import useAppContext from "../../context/appContext"
+import { row1 } from "../../services/dataService"
 
 function ScrollRow({ logos, direction }) {
     const animationClass = direction === 'reverse' ? 'animate-scroll-reverse' : 'animate-scroll';

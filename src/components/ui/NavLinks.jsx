@@ -1,12 +1,8 @@
 import { Link } from "react-router"
 
-const links = [
-    { to: "/pricing", title: "Pricing" },
-    { to: "/docs", title: "Docs" },
-    { to: "/changelog", title: "Changelog" },
-    { to: "/blogs", title: "Blogs" },
-    { to: "/login", title: "Login" },
-]
+import { getNavLinks } from "../../services/navService"
+
+const links = getNavLinks();
 
 function NavLinks({ linkClass }) {
     return (

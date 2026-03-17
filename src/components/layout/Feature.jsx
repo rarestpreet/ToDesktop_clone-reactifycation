@@ -1,5 +1,5 @@
-import FeatureCard from "../elements/FeatureCard"
-import assets from "../util/assets"
+import FeatureCard from "../ui/FeatureCard"
+import assets from "../../assets"
 
 function Feature() {
     return (

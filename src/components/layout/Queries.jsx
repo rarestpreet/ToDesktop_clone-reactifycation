@@ -1,11 +1,12 @@
 import { useState } from "react"
-import QueryContainer from "../elements/QueryContainer"
+import QueryContainer from "../ui/QueryContainer"
+import { getFaqList } from "../../services/faqService"
 
 function Queries() {
     const [openIndex, setOpenIndex] = useState(null)
 
     const generateQuery = () => {
-        const arr = [1, 2, 3, 4, 5, 6]
+        const arr = getFaqList();
 
         return arr.map((item, index) => (
             <QueryContainer

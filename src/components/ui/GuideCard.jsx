@@ -1,4 +1,4 @@
-import assets from "../util/assets"
+import assets from "../../assets"
 import GuideCardChecklist from "./GuideCardChecklist"
 import InfoButton from "./InfoButton.jsx";
 

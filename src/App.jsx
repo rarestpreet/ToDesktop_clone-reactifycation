@@ -1,12 +1,12 @@
-import NavBar from "./components/NavBar"
-import Hero from "./components/Hero"
+import NavBar from "./components/layout/NavBar"
+import Hero from "./components/layout/Hero"
 import AppContextProvider from "./context/AppContextProvider"
-import Guide from "./components/Guide"
-import Feature from "./components/Feature"
-import Review from "./components/Review.jsx"
-import Pricing from "./components/Pricing.jsx"
-import Queries from "./components/Queries.jsx"
-import Footer from "./components/Footer.jsx"
+import Guide from "./components/layout/Guide"
+import Feature from "./components/layout/Feature"
+import Review from "./components/layout/Review.jsx"
+import Pricing from "./components/layout/Pricing.jsx"
+import Queries from "./components/layout/Queries.jsx"
+import Footer from "./components/layout/Footer.jsx"
 
 function App() {
 

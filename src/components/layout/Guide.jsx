@@ -1,4 +1,4 @@
-import GuideCard from "../elements/GuideCard"
+import GuideCard from "../ui/GuideCard"
 
 function Guide() {
     return (

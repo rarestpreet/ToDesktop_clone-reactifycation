@@ -1,4 +1,4 @@
-import assets from "../util/assets.js";
+import assets from "../../assets/index.js";
 import InfoButton from "./InfoButton.jsx"
 import ProfileCard from "./ProfileCard.jsx"
 

@@ -1,6 +1,6 @@
 import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
-import useAppContext from "../context/appContext"
+import useAppContext from "../../context/appContext"
 
 function NavBar() {
     const { isMobile } = useAppContext()

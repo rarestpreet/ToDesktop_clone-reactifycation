@@ -1,4 +1,4 @@
-import assets from "./assets"
+import assets from "../assets"
 
 export const row1 = [
     { src: assets.asset3, name: "Unbounce" },

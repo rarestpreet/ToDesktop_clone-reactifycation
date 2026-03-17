@@ -1,7 +1,7 @@
-import assets from "../util/assets.js";
-import MainReviewCard from "../elements/MainReviewCard.jsx"
-import ReviewCard from "../elements/ReviewCard.jsx"
-import DownloadCard from "../elements/DownloadCard.jsx"
+import assets from "../../assets/index.js";
+import MainReviewCard from "../ui/MainReviewCard.jsx"
+import ReviewCard from "../ui/ReviewCard.jsx"
+import DownloadCard from "../ui/DownloadCard.jsx"
 
 function Review() {
     return (

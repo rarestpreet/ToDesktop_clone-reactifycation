@@ -1,4 +1,4 @@
-import assets from "../util/assets"
+import assets from "../../assets"
 
 function NavCTA({ className }) {
     return (
